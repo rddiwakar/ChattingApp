@@ -63,6 +63,6 @@ function outputRoomName(room){
 
 function outputUsers(users){ 
     roomUsers.innerHTML=`${users.map(user =>{
-        return`<li>${user.username}</li>`
+        return`<li>${user.username.replace('+',' ')}</li>`
     }).join("")}`
 }
